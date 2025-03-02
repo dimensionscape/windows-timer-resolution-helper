@@ -20,3 +20,5 @@ process.on('exit', () => {
     helperProcess.kill(); // Stop the timer helper
 });
 ```
+
+*Note: This method requires that the process remain open and does not make permanent changes to your system*
