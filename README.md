@@ -21,4 +21,5 @@ process.on('exit', () => {
 });
 ```
 
-*Note: This method requires that the process remain open and does not make permanent changes to your system*
+*Note: This method requires that the process remain open and does not make permanent changes to your system
+- additionally, this does not seem to work from a seperate process on windows the latest windows 10/11*
