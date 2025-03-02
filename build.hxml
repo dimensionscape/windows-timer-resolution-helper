@@ -1,0 +1,4 @@
+-cp src 
+-cpp bin
+-main WindowsTimerResolutionHelper
+-D HAXE_OUTPUT_FILE=wtrh
