@@ -14,7 +14,7 @@ const helperProcess = spawn('wtrh.exe', {
 
 console.log("Windows Timer Resolution Helper started.");
 
-// Optional: Ensure it closes when Node.js exits
+// Optional: Ensure it closes when Node.js exits (undetached process)
 process.on('exit', () => {
     console.log("Node.js exiting... Stopping helper.");
     helperProcess.kill(); // Stop the timer helper
