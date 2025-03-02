@@ -1,13 +1,13 @@
 # windows timer resolution helper
  Small tool that spins a zero resource process that lowers the timer resolution on windows to the fastest possible.
 
-Example node.js usage:
+Example Node.js usage:
 
 ```js
 const { spawn } = require('child_process');
 
 // Launch the helper process
-const helperProcess = spawn('windows-timer-helper.exe', {
+const helperProcess = spawn('wtrh.exe', {
     detached: false, // Ensures it exits with Node.js
     stdio: 'ignore'  // Prevents output from being tied to Node.js
 });
